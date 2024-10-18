@@ -30,6 +30,7 @@ body{
 }
 
 .header {
+    border: 3px solid yellow;
     margin-bottom: 100px;
     background: linear-gradient(to right top, #0000008a, #0000008a), url(../assets/img/bg-inicio.jpg);
     background-position: center center;
@@ -135,7 +136,8 @@ body{
             min-height: 50vh;
             margin-bottom: 20px;
             .navegacion {
-                margin-left: 5px; 
+                margin-left: -44px; 
+                padding-left: 80px;
                 margin-right: 60px;
                 flex-direction: column;
                 row-gap: 20px;
@@ -163,24 +165,19 @@ body{
 
         .header-txt h1{
             font-size: 1.2rem;
-            margin-left: 10px;
+            margin-left: 0;
+            padding-left: 38px;
             
         }
         .header-txt p {
-            margin-left: 10px;
-            font-size: 12px;
+            margin-left: 0;
+            font-size: 10px;
             margin-top: 20px;
-            
+            padding-left: 40px;
             
         }
         
-        .main h2{
-            font-size: 1.2rem;
-            margin-right: 65px;
-            margin-top: 5px;
-            margin-bottom: 30px;
-            
-        }
+        
     }
 
 /*ESTILOS PARA MAIN ESCRITORIO*/
@@ -191,6 +188,12 @@ body{
     flex-direction: column;
     justify-content: center;
 } 
+
+/* main section h2{
+    font-size: 35px;
+    margin-bottom: 30px;
+    text-align: center;
+} */
 
 .grid-productos-container{
     display: grid;
@@ -321,116 +324,44 @@ body{
 /*ESTILOS PARA MOBILE Y TABLET SECCION CARDS*/
 
 @media (max-width: 768px) {
-    .grid-productos-container{
-        display: flex;
-        flex-direction: column;
-        width: 18%; 
-        margin-left: 600px;
-        /* line-height: 50px; */
+    .container{
+        padding: 0 50px;
+    }
+    main section h2{
+        font-size: 18px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-right: 60px;
         text-align: center;
+
+    }
+    .grid-productos-container{
+        display: flex; 
+        flex-direction: column;
+        width: 18%;
+        margin-left: 580px;
+        margin-right: 580px;
+        vertical-align: middle;
+        /* text-align: center; */
         
     }
 }
 
 /*ESTILOS PARA MOBILE Y TABLET SECCION CONTACTO*/
 @media (max-width: 768px) {
+    .container{
+        padding: 0;
+    }
     .form{
         min-height:60vh;
-        width: 280px; 
-        margin-right: 80px;
+        width: 270px; 
+        margin-right: 40px;
+        margin-left: 40px;
+        padding: 45px 45px;
     }
 }
 
 /*ESTILOS ESCRITORIO FOOTER*/
-/* .footer{
-        color: var(--color-blanco);
-        height: 15vh;
-        display: flex;
-        justify-content: center; 
-        align-items: center;
-        
-
-        .listaNav {
-            min-height: 70px;
-            list-style: none;
-            display: flex;
-            gap: 30px;
-            align-items: center;
-
-            .listaItem {
-                margin-left: 20px;
-
-                .linkNav {
-                    text-decoration: none;
-                    color: var(--color-blanco);
-                    font-weight: 700;
-                    font-size: 1rem;
-                }
-
-            }
-        }
-
-        .flechaArriba {
-            position: fixed;
-            bottom: 10px;
-            right: 20px;
-            cursor: pointer;
-        }
-
-        .bi {
-            text-align: center;
-            font-size: 30px;
-            margin: 10px;
-            border-radius: 50%;
-            padding: 5px 10px;
-            transition-duration: 3s;
-            transition-property: scale;
-            transition: transform scale;
-            color: var(--color-blanco);
-    
-        }
-        
-        .about {
-            padding: 12px 10px;
-            border-radius: 28%;
-            background-color: var(--color-primario);
-            box-shadow: 0 0 20PX rgba(0, 0, 0, 0.4);
-            cursor: pointer;
-            transition: transform 0.3s, opacity 0.5s, ease-in-out;
-        }
-
-        .about:hover {
-            background-color: var(--color-primario-oscuro);
-            transform: scale(0.95);
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
-        } 
-
-        .bi-whatsapp {
-            background-color: #157347;
-            transition: transform 0.3s, opacity 0.5s, ease-in-out;
-            
-        }
-
-        .bi-facebook{
-            background-color: #0B5ED7;
-            transition: transform 0.3s, opacity 0.5s, ease-in-out;
-        }
-
-        .bi-twitter-x {
-            background-color: #5C636A;
-            transition: transform 0.3s, opacity 0.5s, ease-in-out;
-        }
-
-        .bi-instagram {
-            background-color: #DC3545;
-            transition: transform 0.3s, opacity 0.5s, ease-in-out;
-        }
-
-        .bi:hover{
-            transform: scale(0.95);
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-        }
-} */
 
 .footer {
     color: var(--color-blanco);
