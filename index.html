@@ -133,12 +133,12 @@
         </section>
         <!-- Seccion contacto -->
         <section data-aos="fade-up" data-aos-offset="300" data-aos-delay="50" data-aos-duration="1000" id="contacto" class="contacto container">
-            <form action="https://formspree.io/f/mwpkeokl " method="POST" class="form">
+            <form action="https://formspree.io/f/mwpkeokl" method="POST" class="form">
                 <h3 class="titulo-contacto">Contacto</h3>
                 <div class="input-group">
                     <input class="input" type="text" name="name" id="name" placeholder="Nombre" required>
                     <input class="input" type="text" name="apellido" id="apellido" placeholder="Apellido" required>
-                    <input class="input" type="email" name="e-mail" id="e-mail" placeholder="usuario@cuenta.com" pattern="/\S+@\S+\.\S+/">
+                    <input class="input" type="email" name="e-mail" id="e-mail" placeholder="usuario@cuenta.com" pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,}$">
                     <textarea class="txtarea" name="message" id="message" cols="30" rows="5" placeholder="Mensaje:"></textarea>
                     <input class="btn" id="btn" type="submit" value="Enviar">
                 </div>
@@ -163,5 +163,6 @@
     <script>
         AOS.init();
     </script>
+    action="https://formspree.io/f/mwpkeokl "
 </body>
 </html>
