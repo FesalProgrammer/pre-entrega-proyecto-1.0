@@ -30,7 +30,6 @@ body{
 }
 
 .header {
-    border: 3px solid yellow;
     margin-bottom: 100px;
     background: linear-gradient(to right top, #0000008a, #0000008a), url(../assets/img/bg-inicio.jpg);
     background-position: center center;
@@ -167,7 +166,6 @@ body{
             font-size: 1.2rem;
             margin-left: 0;
             padding-left: 38px;
-            
         }
         .header-txt p {
             margin-left: 0;
@@ -176,12 +174,9 @@ body{
             padding-left: 40px;
             
         }
-        
-        
     }
 
 /*ESTILOS PARA MAIN ESCRITORIO*/
-
 .main{
     display: flex;
     align-items: center;
@@ -189,11 +184,6 @@ body{
     justify-content: center;
 } 
 
-/* main section h2{
-    font-size: 35px;
-    margin-bottom: 30px;
-    text-align: center;
-} */
 
 .grid-productos-container{
     display: grid;
@@ -220,7 +210,6 @@ body{
 .img-del-juego{
     border-radius: 15px;
 }
-
 
 .producto-txt{
     padding: 10px 50px;
@@ -320,47 +309,6 @@ body{
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }    
 
-
-/*ESTILOS PARA MOBILE Y TABLET SECCION CARDS*/
-
-@media (max-width: 768px) {
-    .container{
-        padding: 0 50px;
-    }
-    main section h2{
-        font-size: 18px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        margin-right: 60px;
-        text-align: center;
-
-    }
-    .grid-productos-container{
-        display: flex; 
-        flex-direction: column;
-        width: 18%;
-        margin-left: 580px;
-        margin-right: 580px;
-        vertical-align: middle;
-        /* text-align: center; */
-        
-    }
-}
-
-/*ESTILOS PARA MOBILE Y TABLET SECCION CONTACTO*/
-@media (max-width: 768px) {
-    .container{
-        padding: 0;
-    }
-    .form{
-        min-height:60vh;
-        width: 270px; 
-        margin-right: 40px;
-        margin-left: 40px;
-        padding: 45px 45px;
-    }
-}
-
 /*ESTILOS ESCRITORIO FOOTER*/
 
 .footer {
@@ -449,7 +397,46 @@ body{
     }
 }
 
+/*ESTILOS PARA SECCION CARD PARA MOBILE Y TABLET*/
 
+@media (max-width: 768px) {
+    .container{
+        padding: 0 50px;
+    }
+    main section h2{
+        font-size: 18px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-right: 60px;
+        text-align: center;
+    
+    }
+    .grid-productos-container{
+        display: flex; 
+        flex-direction: column;
+        width: 18%;
+        margin-left: 580px;
+        margin-right: 580px;
+        vertical-align: middle;
+    }
+}
+
+/*ESTILOS CONTACTO PARA MOBILE Y TABLET*/
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0;
+    }
+
+    .form {
+        min-height: 40vh;
+        width: 270px;
+        margin-right: 40px;
+        margin-left: 40px;
+        margin-bottom: 20px;
+        padding: 45px 45px;
+    }
+}
 
 /*ESTILOS FOOTER CELULAR Y TABLET CHICA*/
 @media (max-width: 768px) {
@@ -459,19 +446,16 @@ body{
         padding-bottom: 20px;
         margin-right: 115px;
         margin-left: 28px;
-
-
         .listaNav {
             flex-direction: column;
-            row-gap: 15px;
-
+            row-gap: 30px;
             .listaItem {
-
                 .linkNav {
                     font-size: 1rem;
+                    padding: 17px 25px;
+                    margin-left: 72px;
+                    margin-right: 10px;
                 }
-
-
             }
         }
     }
