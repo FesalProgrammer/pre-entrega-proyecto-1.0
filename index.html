@@ -6,6 +6,7 @@
     <title>E-COMMERCE-1.0</title>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="icon" href="./assets/img/fotoLogo.jpg">
 </head>
@@ -138,7 +139,8 @@
                 <div class="input-group">
                     <input class="input" type="text" name="name" id="name" placeholder="Nombre" required>
                     <input class="input" type="text" name="apellido" id="apellido" placeholder="Apellido" required>
-                    <input class="input" type="email" name="e-mail" id="e-mail" placeholder="usuario@cuenta.com" pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,}$">
+                    <input class="input" type="email" name="e-mail" id="e-mail" placeholder="usuario@cuenta.com" pattern="^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$
+                    ">
                     <textarea class="txtarea" name="message" id="message" cols="30" rows="5" placeholder="Mensaje:"></textarea>
                     <input class="btn" id="btn" type="submit" value="Enviar">
                 </div>
@@ -163,6 +165,5 @@
     <script>
         AOS.init();
     </script>
-    action="https://formspree.io/f/mwpkeokl "
 </body>
 </html>

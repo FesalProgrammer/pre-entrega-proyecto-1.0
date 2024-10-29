@@ -201,9 +201,12 @@ body{
     background-color: var(--fondo-claro); 
     border-radius: 15px;
     box-shadow: 0 0 20PX rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 .card:hover{
+    transform: scale(1.05);
     box-shadow: 0 0 15px 5px var(--color-primario);
+    
 
 } 
 
@@ -329,9 +332,7 @@ body{
 
         .listaItem {
             margin-left: 20px;
-            /* gap: 20px; */
-
-
+            
             .linkNav {
                 text-decoration: none;
                 color: var(--color-blanco);
@@ -339,7 +340,7 @@ body{
                 font-size: 1rem;
                 padding-top: 15px;
                 padding-bottom: 16px;
-                /* vertical-align: middle; */
+                
             }
         }
     }
