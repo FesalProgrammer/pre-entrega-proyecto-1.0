@@ -340,9 +340,21 @@ body{
                 font-size: 1rem;
                 padding-top: 15px;
                 padding-bottom: 16px;
-                
+                .bi{
+                    text-align: center;
+                    font-size: 30px;
+                    margin: 25px;
+                    border-radius: 50%;
+                    padding: 5px 10px;
+                    color: var(--color-blanco);
+                    transition: box-shadow 0.3s ease-in-out;
+                }
+                .bi:hover{
+                        box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+                }
             }
         }
+    
     }
 
     .flechaArriba {
@@ -365,20 +377,6 @@ body{
         background-color: var(--color-primario-oscuro);
         transform: scale(0.95); /* Cambio de tamaño a 95% */
         box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
-    }
-
-    .bi {
-        text-align: center;
-        font-size: 30px;
-        margin: 25px;
-        border-radius: 50%;
-        padding: 5px 10px;
-        color: var(--color-blanco);
-        transition: transform 0.3s, opacity 0.5s ease-in-out; /* Añade transición para suavizar el cambio de tamaño */
-    }
-
-    .bi:hover {
-        transform: scale(0.95); /* Cambio de tamaño a 95% */
     }
 
     .bi-whatsapp {
