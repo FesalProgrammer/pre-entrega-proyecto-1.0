@@ -22,7 +22,7 @@
     list-style: none;
 }
 
-/*ESTILOS HEADER PARA ESCRITORIO*/
+/*ESTILO ESCRITORIO PARA HEADER*/
 
 body{
     font-family: var(--fuente-primaria);
@@ -129,9 +129,9 @@ body{
     
 }
 
-/*ESTILOS HEADER PARA MOBILE Y TABLET*/
+/*ESTILO MOBILE PARA HEADER*/
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
         .header {
             min-height: 50vh;
             margin-bottom: 20px;
@@ -177,14 +177,13 @@ body{
         }
     }
 
-/*ESTILOS PARA MAIN ESCRITORIO*/
+/*ESTILO ESCRITORIO PARA SECCION CARDS*/
 .main{
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
 } 
-
 
 .grid-productos-container{
     display: grid;
@@ -257,6 +256,35 @@ body{
     
 }
 
+/*ESTILOS MOBILE PARA SECCION CARD*/
+
+@media screen and (max-width: 768px) {
+    .container{
+        padding: 0 50px;
+    }
+    main section h2{
+        font-size: 18px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-right: 18px;
+        text-align: center;
+    
+    }
+    .grid-productos-container{
+        display: flex; 
+        flex-direction: column;
+        width: 18%;
+        margin-left: 618px;
+        vertical-align: middle;
+    }
+    .btn-comprar{
+        background-color: var(--color-primario);
+        padding: 2px 15px;
+    }
+}
+
+/* ESTILO ESCRITORIO PARA FORMULARIO CONTACTO*/
+
 .titulo-contacto{
     font-size: 1.4rem;
     color: var(--color-blanco);
@@ -314,6 +342,23 @@ body{
     transform: scale(0.95);
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }    
+
+/*ESTILOS MOBILE PARA FORMULARIO CONTACTO*/
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0;
+    }
+
+    .form {
+        min-height: 40vh;
+        width: 270px;
+        margin-right: 40px;
+        margin-left: 40px;
+        margin-bottom: 20px;
+        padding: 45px 45px;
+    }
+}
 
 /*ESTILOS ESCRITORIO PARA EL FOOTER*/
 
@@ -397,52 +442,9 @@ body{
     }
 }
 
-/*ESTILOS PARA SECCION CARD PARA MOBILE Y TABLET*/
+/*ESTILO MOBILE PARA FOOTER*/
 
-@media (max-width: 768px) {
-    .container{
-        padding: 0 50px;
-    }
-    main section h2{
-        font-size: 18px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        margin-right: 18px;
-        text-align: center;
-    
-    }
-    .grid-productos-container{
-        display: flex; 
-        flex-direction: column;
-        width: 18%;
-        margin-left: 618px;
-        vertical-align: middle;
-    }
-    .btn-comprar{
-        background-color: var(--color-primario);
-        padding: 2px 15px;
-    }
-}
-
-/*ESTILOS CONTACTO PARA MOBILE Y TABLET*/
-
-@media (max-width: 768px) {
-    .container {
-        padding: 0;
-    }
-
-    .form {
-        min-height: 40vh;
-        width: 270px;
-        margin-right: 40px;
-        margin-left: 40px;
-        margin-bottom: 20px;
-        padding: 45px 45px;
-    }
-}
-
-/*ESTILOS FOOTER CELULAR Y TABLET CHICA*/
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .footer {
         height: initial;
         padding-top: 15px;

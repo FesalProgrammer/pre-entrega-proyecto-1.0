@@ -1,15 +1,18 @@
 Título del proyecto: 
 E-Commerce
 
+Fecha:
+31102024
+
 Autor:
 Fesal La Rosa
 
-Nombre del repositorio.
+URL del repositorio.
 Descripción:
 https://github.com/FesalProgrammer/pre-entrega-proyecto-1.0.git
 
 Breve descripción del proyecto:
-Proyecto escolar sobre como construir un sitio web para comprar productos.
+Proyecto escolar sobre como construir un sitio web tipo e=commerce.
 
 Requisitos HTML:
 ● Estructura semántica: El HTML debe estar
